@@ -6,5 +6,5 @@ node {
         spec  : "*/1 * * * *" 
         ] ] )     
  stage 'Dev'
-   echo 'Hello World2'
+   echo 'Hello World and Hello Me'
     }
