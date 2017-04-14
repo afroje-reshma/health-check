@@ -1,4 +1,4 @@
-2node {
+node {
     pipelineTriggers( 
      [ 
     [ 
