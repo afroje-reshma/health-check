@@ -1,4 +1,4 @@
-node {
+2node {
     pipelineTriggers( 
      [ 
     [ 
@@ -6,5 +6,5 @@ node {
         spec  : "*/1 * * * *" 
         ] ] )     
  stage 'Dev'
-   echo 'Hello World'
+   echo 'Hello World2'
     }
