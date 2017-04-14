@@ -1,6 +1,6 @@
 node {
      pipelineTriggers( 
-                      [ [   $class: 'hudson.triggers.TimerTrigger',  spec  : "*/5 * * * *"  ] ]                    
+                      [ [   $class: 'hudson.triggers.TimerTrigger',  spec  : "* * * * *"  ] ]                    
      ) 
 
     stage 'Checkout'   
