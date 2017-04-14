@@ -1,5 +1,5 @@
 node {
-    stage 'Checkout-Code'   
+    stage 'Checkout'   
     checkout scm
     def project_path = "health-check"
     stage 'Dev'
