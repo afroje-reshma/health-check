@@ -1,7 +1,10 @@
 
 node {
-     properties (pipelineTriggers([[ $class: 'hudson.triggers.TimerTrigger', spec  : '* * * * *' ]]),
-    )
+    properties([
+    pipelineTriggers([
+        scm('* * * * *')
+    ])
+])
     
     stage 'Checkout'   
     checkout scm
