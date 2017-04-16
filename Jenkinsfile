@@ -1,17 +1,18 @@
 
 node {
-     
-    stage 'Checkout'   
-    checkout scm
-    def project_path = "health-check"
-    pipelineTriggers( 
+     properties (
+     pipelineTriggers( 
                       [
                            [  
                                 $class: 'hudson.triggers.TimerTrigger',  
-                                spec  : "* * * * *"  
+                                spec  : '* * * * *' 
                            ] 
                       ] 
-         )
-    stage 'Dev'
+          )
+        )  
+    stage 'Checkout'   
+    checkout scm
+    def project_path = "health-check"
+       stage 'Dev'
     echo 'Hello World'
     }
