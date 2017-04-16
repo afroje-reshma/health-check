@@ -2,7 +2,7 @@
 node {
    properties([
     pipelineTriggers([
-        cron('30 8 * * *')
+        cron('H/30 8 * * *')
     ])
 ])
     
