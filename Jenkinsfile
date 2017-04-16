@@ -1,8 +1,8 @@
 
 node {
-    properties([
+   properties([
     pipelineTriggers([
-        scm('* * * * *')
+        cron('* * * * *')
     ])
 ])
     
