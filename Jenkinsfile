@@ -6,14 +6,14 @@ node {
     ])
 ])*/
    
- /* properties([ 
+  properties([ 
       [
         $class: 'BuildDiscarderProperty',
         strategy: [
           $class: 'LogRotator',
           numToKeepStr: '10'
           ]
-       ]])*/
+       ]])
     
     stage 'Checkout-code'   
     checkout scm
