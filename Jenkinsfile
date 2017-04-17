@@ -1,10 +1,10 @@
 
 node {
-  /* properties([
+   properties([
     pipelineTriggers([
-        cron('H/30 8 * * *')
+        cron('* * * * *')
     ])
-])*/
+])
    
   properties([ 
       [
