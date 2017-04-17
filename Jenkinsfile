@@ -17,7 +17,7 @@ node {
     [
         $class: 'GithubProjectProperty',
         displayName: '',
-        projectUrlStr: 'https://github.com/xxxxxxx/xxxxx-xxxx/'
+        projectUrlStr: 'https://github.com/afroje-reshma/health-check.git'
       ]
     ])
     
