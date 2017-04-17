@@ -9,10 +9,10 @@ node {
                numToKeepStr: '10']
         ],
       pipelineTriggers([
-          cron('* * * * *')
+          cron('H/30 8 * * *')
         ]),
       pipelineTriggers([
-        [$class: "SCMTrigger", scmpoll_spec: "* * * * *"]
+        [$class: "SCMTrigger", scmpoll_spec: "H/5 * * * *"]
     ])
     
     ])
