@@ -8,9 +8,11 @@ node {
                $class: 'LogRotator', 
                numToKeepStr: '10']
         ],
-        pipelineTriggers([cron('* * * * *')]),
-    ]
-)
+        pipelineTriggers([
+          cron('* * * * *')
+        ])
+    ])
+
 
     stage 'Checkout-code'   
     checkout scm
