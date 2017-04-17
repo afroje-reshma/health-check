@@ -3,11 +3,8 @@ node {
    properties([
     pipelineTriggers([
         cron('* * * * *')
-    ])
-])
-   
-  properties([ 
-      [
+    ]),
+          [
         $class: 'BuildDiscarderProperty',
         strategy: [
           $class: 'LogRotator',
