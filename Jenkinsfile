@@ -14,6 +14,11 @@ node {
           numToKeepStr: '10'
           ]
        ],
+    [
+        $class: 'GithubProjectProperty',
+        displayName: '',
+        projectUrlStr: 'https://github.com/xxxxxxx/xxxxx-xxxx/'
+      ]
     ])
     
     stage 'Checkout'   
