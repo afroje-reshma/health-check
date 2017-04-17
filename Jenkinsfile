@@ -17,7 +17,7 @@ node {
     ])
 
 
-    stage 'Checkout'   
+    stage 'Git-Checkout'   
     checkout scm
     def project_path = "health-check"
     stage 'Dev'
