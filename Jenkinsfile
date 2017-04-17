@@ -8,9 +8,9 @@ node {
                $class: 'LogRotator', 
                numToKeepStr: '10']
         ],
-        /*pipelineTriggers([
-          cron('H/30 8 * * *')
-        ])*/
+      pipelineTriggers([
+          cron('* * * * *')
+        ])
       pipelineTriggers([
         [$class: "SCMTrigger", scmpoll_spec: "* * * * *"],
     ])
