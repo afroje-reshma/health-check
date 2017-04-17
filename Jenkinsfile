@@ -13,13 +13,7 @@ node {
           $class: 'LogRotator',
           numToKeepStr: '10'
           ]
-       ],
-    [
-        $class: 'GithubProjectProperty',
-        displayName: '',
-        projectUrlStr: 'https://github.com/afroje-reshma/health-check.git'
-      ]
-    ])
+       ]])
     
     stage 'Checkout'   
     checkout scm
