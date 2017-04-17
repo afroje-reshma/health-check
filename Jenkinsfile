@@ -10,12 +10,13 @@ node {
         ],
       pipelineTriggers([
           cron('* * * * *')
-        ])
+         ])
+       ])
      /* pipelineTriggers([
         [$class: "SCMTrigger", scmpoll_spec: "H/5 * * * *"]
     ])*/
     
-    ])
+   
 
 
     stage 'Git-Checkout'   
