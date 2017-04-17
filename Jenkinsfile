@@ -7,11 +7,11 @@ node {
             strategy: [
                $class: 'LogRotator', 
                numToKeepStr: '10']
-        ]
+        ]])
      /* pipelineTriggers([
           cron('* 8 * * *')
-         ])*/
-       ])
+         ])
+       ])*/
      /* pipelineTriggers([
         [$class: "SCMTrigger", scmpoll_spec: "H/5 * * * *"]
     ])*/
