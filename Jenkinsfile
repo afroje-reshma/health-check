@@ -19,11 +19,11 @@ node {
    
 
 
-    stage 'Git-Checkout'   
+    stage 'Checkout'   
     checkout scm
     def project_path = "health-check"
-    stage 'Dev-Env'
+    stage 'Dev'
     echo 'Hello World'
-    stage 'QA-Test'
+    stage 'QA'
     echo 'Hello World'
     }
