@@ -8,12 +8,13 @@ node {
    
   properties([ 
       [
-        $class: 'jenkins.model.BuildDiscarderProperty',
+        $class: 'BuildDiscarderProperty',
         strategy: [
           $class: 'LogRotator',
           numToKeepStr: '10'
           ]
-      ],
+       ],
+    ])
     
     stage 'Checkout'   
     checkout scm
