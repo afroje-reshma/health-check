@@ -22,6 +22,6 @@ node {
     def project_path = "health-check"
     stage 'Dev'
     echo 'Hello World'
-    stage 'QA'
+    stage 'QA-Test'
     echo 'Hello World'
     }
