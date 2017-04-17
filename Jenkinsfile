@@ -1,10 +1,14 @@
 
 node {
-   properties([
+  /* properties([
     pipelineTriggers([
         cron('H/30 8 * * *')
     ])
-])
+])*/
+   
+   properties([[$class: 'jenkins.model.BuildDiscarderProperty', strategy: 
+            [$class: 'LogRotator', numToKeepStr: '10', artifactNumToKeepStr: '10']
+           ]])
     
     stage 'Checkout'   
     checkout scm
