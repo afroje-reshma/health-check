@@ -22,7 +22,7 @@ node {
     stage 'Checkout'   
     checkout scm
     def project_path = "health-check"
-    stage 'Dev'
+    stage 'Dev-Env'
     echo 'Hello World'
     stage 'QA'
     echo 'Hello World'
