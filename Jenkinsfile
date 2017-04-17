@@ -10,10 +10,10 @@ node {
         ],
       pipelineTriggers([
           cron('* * * * *')
-        ])
-      /*pipelineTriggers([
+        ]),
+      pipelineTriggers([
         [$class: "SCMTrigger", scmpoll_spec: "* * * * *"]
-    ])*/
+    ])
     
     ])
 
