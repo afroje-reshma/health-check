@@ -9,7 +9,7 @@ node {
                numToKeepStr: '10']
         ],
       pipelineTriggers([
-          cron('* H/12 * * *')
+          cron('H/30 H/6 * * *')
          ])
        ])
      /* pipelineTriggers([
