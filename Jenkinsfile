@@ -1,4 +1,4 @@
-
+/
 node {
   
     properties([
@@ -9,7 +9,7 @@ node {
                numToKeepStr: '10']
         ],
       pipelineTriggers([
-          cron('* * * * *')
+          cron('H/* * * * *')
          ])
        ])
      /* pipelineTriggers([
