@@ -23,10 +23,10 @@ node {
     stage 'Checkout'   
     checkout scm
     def project_path = "health-check"
-    stage 'Dev-Env'
+    /*stage 'Dev-Env'
     echo 'Hello World '
     stage 'QA-Test'
-    echo 'Hello World'
+    echo 'Hello World'*/
     }
   finally {
         step([$class: 'Mailer', notifyEveryUnstableBuild: true, recipients: 'afrojareshma@yahoo.com', sendToIndividuals: true])
