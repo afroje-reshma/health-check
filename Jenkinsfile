@@ -19,11 +19,11 @@ node {
         [$class: "SCMTrigger", scmpoll_spec: "H/5 * * * *"]
     ])*/
 
-
-    stage 'Checkout'   
+    stage ''
+    /*stage 'Checkout'   
     checkout scm
     def project_path = "health-check"
-    /*stage 'Dev-Env'
+    stage 'Dev-Env'
     echo 'Hello World '
     stage 'QA-Test'
     echo 'Hello World'*/
