@@ -17,7 +17,7 @@ node {
         [$class: "SCMTrigger", scmpoll_spec: "H/5 * * * *"]
     ])*/
 currentBuild.result = "SUCCESS"    
-try {
+
     stage 'Checkout'   
     checkout scm
     def project_path = "health-check"
@@ -26,7 +26,7 @@ try {
     stage 'QA-Test'
     echo 'Hello World'
   
-  
+ try {
    mail body: "project build successful: ${env.BUILD_URL}",
     subject: 'project build successful',
     to: 'afrojareshma@yahoo.com'
