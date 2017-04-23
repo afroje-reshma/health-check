@@ -28,7 +28,7 @@ node {
     echo 'Hello World'
   
   
-   mail body: 'project build successful'
+   mail body: "project build successful: ${env.BUILD_URL}",
     subject: 'project build successful',
     to: 'afrojareshma@yahoo.com'
   }
