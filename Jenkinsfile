@@ -1,7 +1,7 @@
  
 
 node {
-    notify('Started')
+    
   
     properties([
         [
@@ -18,7 +18,7 @@ node {
         [$class: "SCMTrigger", scmpoll_spec: "H/5 * * * *"]
     ])*/
     
-   
+    notify('Started')
     stage 'Checkout'   
     checkout scm
     def project_path = "health-check"
