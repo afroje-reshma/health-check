@@ -1,7 +1,8 @@
  
 
 node {
-    
+    currentBuild.result = "SUCCESS" 
+    try {
     properties([
         [
            $class: 'BuildDiscarderProperty',
@@ -16,7 +17,7 @@ node {
      /* pipelineTriggers([
         [$class: "SCMTrigger", scmpoll_spec: "H/5 * * * *"]
     ])*/
-currentBuild.result = "SUCCESS"    
+
 
     stage 'Checkout'   
     checkout scm
@@ -26,7 +27,7 @@ currentBuild.result = "SUCCESS"
     stage 'QA-Test'
     echo 'Hello World'
   
- try {
+ 
    mail body: 'project build successful',
     subject: 'project build successful',
     recipients: 'afrojareshma@yahoo.com'
