@@ -1,4 +1,5 @@
- 
+
+
 
 node {
     
@@ -27,11 +28,11 @@ node {
     stage 'QA-Test'
     echo 'Hello World'
     }
- } finally {
+  finally {
         step([$class: 'Mailer', notifyEveryUnstableBuild: true, recipients: 'afrojareshma@yahoo.com', sendToIndividuals: true])
     }
  
-  
+}
 
   
  
