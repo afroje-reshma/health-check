@@ -27,9 +27,9 @@ currentBuild.result = "SUCCESS"
     echo 'Hello World'
   
  try {
-   mail body: "project build successful: ${env.BUILD_URL}",
+   mail body: 'project build successful',
     subject: 'project build successful',
-    reply to: '{afrojareshma@yahoo.com }'
+    reply to: 'afrojareshma@yahoo.com'
   
   } 
 }
