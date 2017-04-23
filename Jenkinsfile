@@ -1,7 +1,7 @@
  
 
 node {
-    currentBuild.result = "SUCCESS" 
+    
     try {
     properties([
         [
@@ -26,14 +26,13 @@ node {
     echo 'Hello World '
     stage 'QA-Test'
     echo 'Hello World'
-  
+    }
+ } finally {
+        step([$class: 'Mailer', notifyEveryUnstableBuild: true, recipients: 'afrojareshma@yahoo.com', sendToIndividuals: true])
+    }
  
-   mail body: 'project build successful',
-    subject: 'project build successful',
-    recipients: 'afrojareshma@yahoo.com'
   
-  } 
-}
+
   
  
 
