@@ -29,7 +29,7 @@ currentBuild.result = "SUCCESS"
  try {
    mail body: 'project build successful',
     subject: 'project build successful',
-    recipient: 'afrojareshma@yahoo.com'
+    recipients: 'afrojareshma@yahoo.com'
   
   } 
 }
