@@ -2,8 +2,6 @@
 
 node {
     
-    currentBuild.result = "SUCCESS"
- try {
     properties([
         [
            $class: 'BuildDiscarderProperty',
@@ -18,8 +16,8 @@ node {
      /* pipelineTriggers([
         [$class: "SCMTrigger", scmpoll_spec: "H/5 * * * *"]
     ])*/
-    
- 
+currentBuild.result = "SUCCESS"    
+try {
     stage 'Checkout'   
     checkout scm
     def project_path = "health-check"
