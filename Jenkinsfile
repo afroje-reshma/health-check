@@ -11,7 +11,7 @@ node {
                numToKeepStr: '5']
         ],
       pipelineTriggers([
-          cron('* * * * *')
+          cron('H/30 2 * * *')
          ])
        ])
      /* pipelineTriggers([
@@ -29,8 +29,6 @@ node {
   
   
    mail body: 'project build successful'
-    from: 'afroje.reshma@gmail.com',
-    replyTo: 'xxxx@yyyy.com',
     subject: 'project build successful',
     to: 'afrojareshma@yahoo.com'
   }
