@@ -2,7 +2,7 @@
 
 node {
     
-  
+    currentBuild.result = "SUCCESS"
     properties([
         [
            $class: 'BuildDiscarderProperty',
@@ -18,7 +18,7 @@ node {
         [$class: "SCMTrigger", scmpoll_spec: "H/5 * * * *"]
     ])*/
     
-    notify('Started')
+ try {
     stage 'Checkout'   
     checkout scm
     def project_path = "health-check"
@@ -27,19 +27,16 @@ node {
     stage 'QA-Test'
     echo 'Hello World'
   
+  
+   mail body: 'project build successful'
+    from: 'afroje.reshma@gmail.com',
+    replyTo: 'xxxx@yyyy.com',
+    subject: 'project build successful',
+    to: 'afrojareshma@yahoo.com'
+  }
+  
 }
   
- /* def notify(status){
-      emailext (
-        to: afrojareshma@yahoo.com",
-        subject: "${status}: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]'", */
-
-     def notify(status){
-     emailext (
-      to: "afroje.reshma@gmail.com",
-      subject: "${status}: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]'",
  
-      body: """<p>${status}: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]':</p>
-        <p>Check console output at <a href='${env.BUILD_URL}'>${env.JOB_NAME} [${env.BUILD_NUMBER}]</a></p>""",
-    )
-   }
+
+     
