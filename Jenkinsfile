@@ -3,6 +3,7 @@
 
 node {
     
+    currentBuild.result = "SUCCESS"
     try {
     properties([
         [
@@ -27,6 +28,14 @@ node {
     echo 'Hello World '
     stage 'QA-Test'
     echo 'Hello World'
+     
+        mail body: "project build successful is here: ${env.BUILD_URL}" ,
+            /*from: 'afroje.reshma@gmail.com',
+            replyTo: 'afrojareshma@yahoo.com',*/
+            subject: 'project build successful',
+            to: 'afrojareshma@yahoo.com'    
+        
+        
     }
         catch (err) {
       currentBuild.result = "FAILURE"
