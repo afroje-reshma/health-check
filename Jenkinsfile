@@ -32,7 +32,7 @@ node {
         mail body: "project build successful is here: ${env.BUILD_URL}" ,
             /*from: 'afroje.reshma@gmail.com',
             replyTo: 'afrojareshma@yahoo.com',*/
-            subject: 'project build successful',
+            subject: 'project build is successful hee hee haa haa',
             to: 'afrojareshma@yahoo.com'    
         
         
