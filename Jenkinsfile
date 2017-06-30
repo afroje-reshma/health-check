@@ -4,7 +4,7 @@
 node {
     
     //currentBuild.result = "SUCCESS"
-    try {
+    /*try {
     properties([
         [
            $class: 'BuildDiscarderProperty',
@@ -15,7 +15,7 @@ node {
       pipelineTriggers([
           cron('H/59 4 * * *')
          ])
-       ])
+       ])*/
      /* pipelineTriggers([
         [$class: "SCMTrigger", scmpoll_spec: "H/5 * * * *"]
     ])*/
