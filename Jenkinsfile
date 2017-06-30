@@ -4,8 +4,8 @@
 node {
     
     //currentBuild.result = "SUCCESS"
-    /*try {
-    properties([
+    try {
+    /*properties([
         [
            $class: 'BuildDiscarderProperty',
             strategy: [
