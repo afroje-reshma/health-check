@@ -27,7 +27,7 @@ node {
     stage 'Dev-Test-Trigger'
     echo 'Hello Beautiful World '
     stage 'QA-Test-Trigger'
-    echo 'Hello Handsome'
+    echo 'Hello Beautiful!'
      
         //mail body: "project build successful is here: ${env.BUILD_URL}" ,
             /*from: 'afroje.reshma@gmail.com',
