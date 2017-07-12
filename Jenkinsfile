@@ -24,9 +24,9 @@ node {
     stage 'Check'   
     checkout scm
     def project_path = "health-check"
-    stage 'Dev-test-trigger'
+    stage 'Dev-Test-Trigger'
     echo 'Hello Beautiful World '
-    stage 'QA-Test'
+    stage 'QA-Test-Trigger'
     echo 'Hello World'
      
         //mail body: "project build successful is here: ${env.BUILD_URL}" ,
